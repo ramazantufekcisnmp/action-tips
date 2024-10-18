@@ -16,7 +16,7 @@ jobs:
       - name: Build project assets
         run: npm run build
       - name: yeri göster
-        run: echo pwd
+        run: cd /__w/action-tips/action-tips/
       - name: Upload static site content
         uses: actions/upload-artifact@v3
         env:
