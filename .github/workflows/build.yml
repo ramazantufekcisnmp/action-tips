@@ -19,6 +19,8 @@ jobs:
         run: echo pwd
       - name: Upload static site content
         uses: actions/upload-artifact@v3
+        env:
+          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
         with:
          name: static-site
          path: ./.next
