@@ -69,3 +69,27 @@ jobs:
       - run: node app.js
         name: Run Node application
 ```
+
+## Action Tip 5
+
+nextjs branch inda next.js projesini build etme örneği
+
+```yaml
+name: Build Next.js web application
+on: 
+  push:
+    branches:
+      - nextjs
+jobs: 
+  build-node:
+    name: Build Project
+    runs-on: ubuntu-latest
+    container: node:16
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install NPM dependencies
+        run: npm install
+      - name: Build project assets
+        run: npm run build
+```
