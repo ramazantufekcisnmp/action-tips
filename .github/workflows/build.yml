@@ -15,8 +15,10 @@ jobs:
         run: npm install
       - name: Build project assets
         run: npm run build
+      - name: yeri göster
+        run: echo pwd
       - name: Upload static site content
         uses: actions/upload-artifact@v3
         with:
          name: static-site
-         path: /__w/action-tips/action-tips/.next
+         path: ./.next
