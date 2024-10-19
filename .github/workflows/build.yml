@@ -21,3 +21,4 @@ jobs:
         with:
          name: static-site
          path: .next/
+         include-hidden-files: true
