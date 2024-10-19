@@ -2,7 +2,7 @@ name: Build Next.js web application
 on: 
   push:
     branches:
-      - nextjs
+      - main
 jobs: 
   build-project:
     name: Build Project
