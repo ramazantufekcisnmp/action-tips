@@ -18,7 +18,7 @@ jobs:
       - name: yeri göster
         run: ls -al .next/
       - name: Upload static site content
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         env:
           ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
         with:
