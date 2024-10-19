@@ -7,7 +7,7 @@ jobs:
   build-node:
     name: Build Project
     runs-on: ubuntu-latest
-    container: node:16
+    #container: node:16
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
