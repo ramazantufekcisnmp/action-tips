@@ -4,10 +4,9 @@ on:
     branches:
       - nextjs
 jobs: 
-  build-node:
+  build-project:
     name: Build Project
     runs-on: ubuntu-latest
-    #container: node:16
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -18,7 +17,7 @@ jobs:
       - name: yeri göster
         run: ls -al .next/
       - name: Upload static site content
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
          name: static-site
          path: .next/
